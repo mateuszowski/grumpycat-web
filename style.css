@@ -1,0 +1,43 @@
+body {
+  background-color: #dddd;
+}
+
+.cat {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+}
+
+.cat:hover {
+  animation-name: respin;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+.bottom {
+  width: 500px;
+  height: 500px;
+  position:absolute;
+
+  top: calc(50% - 250px);
+  left: calc(50% - 250px);
+
+  animation-name: spin;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+ animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes respin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
