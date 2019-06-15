@@ -1,5 +1,5 @@
 body {
-  background-color: #dddd;
+  background-color: #352623;
 }
 
 .cat {
@@ -13,7 +13,7 @@ body {
 
 .cat:hover {
   animation-name: respin;
-animation-duration: 1s;
+animation-duration: 0.5s;
 animation-timing-function: linear;
 animation-iteration-count: infinite;
 }
